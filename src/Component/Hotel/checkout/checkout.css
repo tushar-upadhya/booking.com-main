@@ -1,0 +1,41 @@
+.Main-div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+}
+.first-check {
+    padding-top: 20px;
+    border: 1px solid black;
+    width: 48%;
+    margin-left: 20px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+.f-inside h4 {
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 8px; */
+    padding: 20px 20px 10px;
+    line-height: 38px;
+}
+
+.paymentBtn {
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    width: 8rem;
+    background-color: #b6e2a1;
+    cursor: pointer;
+    margin-left: 75%;
+    font-weight: 650;
+}
+
+.paymentBtn:hover {
+    transition: 0.3;
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+}

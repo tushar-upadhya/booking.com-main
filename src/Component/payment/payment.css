@@ -1,0 +1,16 @@
+.input {
+    border: 1px solid red;
+    display: flex;
+    background-color: aliceblue;
+    margin-left: 18%;
+    justify-content: center;
+    margin-top: 50px;
+    width: 60%;
+    /* height: 500px; */
+}
+
+.confirmPay {
+    background: red;
+    margin-left: 50%;
+    padding: 10px;
+}

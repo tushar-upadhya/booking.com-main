@@ -1,9 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import "./hotel.css";
 
 const Hotel = () => {
     const [myData, setMyData] = useState([]);
+
+    const navigate = useNavigate();
+
+    const checkout_page = () => {
+        navigate("/checkout");
+    };
 
     useEffect(() => {
         fetchData();
@@ -23,9 +30,6 @@ const Hotel = () => {
 
     return (
         <div>
-            {/* <Navbar /> */}
-            {/* <Header /> */}
-            {/* <h2>Hotel</h2> */}
             <div className="grid">
                 <div>
                     {myData.map((post) => {
@@ -68,7 +72,9 @@ const Hotel = () => {
                                     <p>Guests:</p>
                                     <h3>{guests}</h3>
                                 </div>
-                                <button className="Btn">BOOK</button>
+                                <button className="Btn" onClick={checkout_page}>
+                                    BOOK
+                                </button>
                             </div>
                         );
                     })}

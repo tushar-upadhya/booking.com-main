@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios, { Axios } from "axios";
+import { useNavigate } from "react-router-dom";
 // import "./hotel.css";
 
 const Flight = () => {
@@ -26,6 +27,12 @@ const Flight = () => {
         } catch (error) {
             console.log("error:", error);
         }
+    };
+
+    const navigate = useNavigate();
+
+    const checkout_page = () => {
+        navigate("/checkout");
     };
 
     return (
@@ -76,7 +83,9 @@ const Flight = () => {
                                     <p>Duration:</p>
                                     <h3>{departureTime}</h3>
                                 </div>
-                                <button className="Btn">BOOK</button>
+                                <button className="Btn" onClick={checkout_page}>
+                                    BOOK
+                                </button>
                             </div>
                         );
                     })}

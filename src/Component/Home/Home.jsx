@@ -33,12 +33,12 @@ const Home = () => {
             )} */}
             <div className="homeContainer">
                 <Design />
-                <Design />
+                {/* <Design /> */}
                 <Property />
                 <Property />
+                <Mail />
+                <Footer />
             </div>
-            <Mail />
-            <Footer />
         </div>
     );
 };

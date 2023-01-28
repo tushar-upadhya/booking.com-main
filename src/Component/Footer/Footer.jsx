@@ -45,9 +45,9 @@ const Footer = () => {
                     <li className="fListItem">Terms & conditions</li>
                 </ul>
             </div>
-            <p className="fText">
+            <div className="fText">
                 Copyright © 2023 booking.com || Tushar Upadhyay
-            </p>
+            </div>
         </div>
     );
 };

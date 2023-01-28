@@ -32,8 +32,6 @@ const Header = ({ type }) => {
         room: 1,
     });
 
-    const navigate = useNavigate();
-
     const handleOption = (name, operation) => {
         setOptions((prev) => {
             return {
@@ -44,15 +42,17 @@ const Header = ({ type }) => {
         });
     };
 
+    const navigate = useNavigate();
+
     const hotelSearch = () => {
         navigate("/hotel", { state: { destination, date, options } });
     };
     const flightSearch = () => {
-        navigate("/flight", { state: { destination, date, options } });
+        navigate("/flight");
     };
 
     const handleSearch = () => {
-        navigate("/search");
+        navigate("/search", { state: { destination, date, options } });
     };
 
     return (

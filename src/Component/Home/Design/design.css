@@ -1,5 +1,6 @@
 .featured {
     width: 100%;
+    margin-top: 10px;
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
